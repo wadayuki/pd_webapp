@@ -1,0 +1,17 @@
+<!doctype HTML>
+<html>
+  <head>
+    <script src="./js/jquery-3.2.0.min.js"></script>
+    <script src="./js/webpd-latest.min.js"></script>
+    <script>
+
+          Pd.start()
+        $.get('./pd/step1.pd', function(patchStr) {
+          patch = Pd.loadPatch(patchStr)
+          console.log(patch)
+        });
+    </script>
+  </head>
+
+  <body></body>
+</html>
