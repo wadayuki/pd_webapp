@@ -4,10 +4,11 @@
     <script src="./js/jquery-3.2.0.min.js"></script>
     <script src="./js/webpd-latest.min.js"></script>
     <script>
-
-          Pd.start()
-        $.get('./pd/step1.pd', function(patchStr) {
+          var patch = null;
+        $.get('./patches/step2.pd', function(patchStr) {
+          alert("get")
           patch = Pd.loadPatch(patchStr)
+          Pd.start()
         });
     </script>
   </head>
