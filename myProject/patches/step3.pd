@@ -1,15 +1,10 @@
 #N canvas 950 203 450 300 10;
-#X msg 63 59 261.6;
-#X msg 147 59 293.6;
-#X msg 247 59 329.6;
+#X msg 131 73 261.6;
 #X obj 143 133 osc~;
-#X obj 277 120 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 255 174 metro 100;
 #X obj 130 235 dac~;
-#X connect 0 0 3 0;
-#X connect 1 0 3 1;
-#X connect 2 0 3 1;
-#X connect 3 0 6 0;
-#X connect 3 0 6 1;
-#X connect 4 0 5 0;
+#X obj 137 29 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 0 0;

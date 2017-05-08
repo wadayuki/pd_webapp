@@ -5,8 +5,7 @@
     <script src="./js/webpd-latest.min.js"></script>
     <script>
           var patch = null;
-        $.get('./patches/step2.pd', function(patchStr) {
-          alert("get")
+        $.get('./patches/step3.pd', function(patchStr) {
           patch = Pd.loadPatch(patchStr)
           Pd.start()
         });
