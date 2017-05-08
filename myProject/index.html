@@ -3,13 +3,15 @@
   <head>
     <script src="./js/jquery-3.2.0.min.js"></script>
     <script src="./js/webpd-latest.min.js"></script>
+    <div id="svg"></div>
     <script>
-          var patch = null;
-        $.get('./patches/step3.pd', function(patchStr) {
+     var patch = null
+        $.get('patches/step3.pd', function(patchStr) {
+          console.log(patchStr)
           patch = Pd.loadPatch(patchStr)
           Pd.start()
-        });
-    </script>
+        })
+</script>
   </head>
 
   <body></body>
