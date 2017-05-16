@@ -1,18 +1,24 @@
 <!doctype HTML>
 <html>
+  <meta charset="utf-8">
   <head>
     <script src="./js/jquery-3.2.0.min.js"></script>
     <script src="./js/webpd-latest.min.js"></script>
     <div id="svg"></div>
     <script>
+      
      var patch = null
         $.get('patches/step3.pd', function(patchStr) {
           console.log(patchStr)
+          var testarray = patchStr.split(";")
+          console.log(testarray);
+          $('#pdfile').append(testarray)
           patch = Pd.loadPatch(patchStr)
-          Pd.start()
+        
         })
 </script>
   </head>
 
   <body></body>
+  <div id="pdfile"></div>
 </html>
